@@ -1,9 +1,10 @@
 #pragma once
+#define _USE_MATH_DEFINES
 /*
 	This namespace allows the processor to call these functions rather than
 	having the math all done directly in the processor method.
 */
-
+#include <cmath>
 namespace distort
 {
 	//A gentle clipper

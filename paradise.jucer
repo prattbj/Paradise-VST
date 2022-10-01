@@ -8,7 +8,6 @@
               cppLanguageStandard="latest">
   <MAINGROUP id="C0G7R5" name="paradise">
     <GROUP id="{5024352A-EB27-9A48-CF4B-0BDF336A1FBF}" name="Source">
-      <FILE id="xFQcS3" name="Distort.cpp" compile="1" resource="0" file="Source/Distort.cpp"/>
       <FILE id="jIzdIE" name="Distort.h" compile="0" resource="0" file="Source/Distort.h"/>
       <FILE id="skQyci" name="PluginProcessor.cpp" compile="1" resource="0"
             file="Source/PluginProcessor.cpp"/>
