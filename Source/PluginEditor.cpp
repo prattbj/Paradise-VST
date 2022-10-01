@@ -16,7 +16,7 @@ ParadiseAudioProcessorEditor::ParadiseAudioProcessorEditor (ParadiseAudioProcess
     // Make sure that before the constructor has finished, you've set the
     // editor's size to whatever you need it to be.
     setSize (240, 300);
-
+    //These all set the slider's values so that they display and work properly
     // soft clip
     softClip.setSliderStyle(juce::Slider::LinearBarVertical);
     softClip.setRange(0.0, 100.0, .01);
@@ -80,16 +80,14 @@ void ParadiseAudioProcessorEditor::paint (juce::Graphics& g)
 {
     // (Our component is opaque, so we must completely fill the background with a solid colour)
     g.fillAll (getLookAndFeel().findColour (juce::ResizableWindow::backgroundColourId));
-    
-
     g.setColour (juce::Colours::white);
     g.setFont (15.0f);
-    g.drawFittedText ("Distortion", 0, 0, getWidth(), 30, juce::Justification::centred, 1);
+    g.drawFittedText ("Paradise", 0, 0, getWidth(), 30, juce::Justification::centred, 1);
 }
 
 void ParadiseAudioProcessorEditor::resized()
 {
-    // sets the position and size of the slider with arguments (x, y, width, height)
+    // sets the position and size of the sliders with arguments (x, y, width, height)
     softClip.setBounds(40, 30, 20, getHeight() - 60);
     hardClip.setBounds(80, 30, 20, getHeight() - 60);
     sinHDistort.setBounds(120, 30, 20, getHeight() - 60);
@@ -101,8 +99,8 @@ void ParadiseAudioProcessorEditor::resized()
 
 void ParadiseAudioProcessorEditor::sliderValueChanged(juce::Slider* slider)
 {
+    //Sets the amount in the processor if the slider value changed
     audioProcessor.softClipAmount = softClip.getValue();
-    
     audioProcessor.hardClipAmount = hardClip.getValue();
     audioProcessor.sinHAmount = sinHDistort.getValue();
     audioProcessor.tripleSinAmount = tripleSinDistort.getValue();

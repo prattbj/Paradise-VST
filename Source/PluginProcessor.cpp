@@ -197,7 +197,8 @@ void ParadiseAudioProcessor::processBlock (juce::AudioBuffer<float>& buffer, juc
         
         // ..do something to the data...
         for (int sample = 0; sample < buffer.getNumSamples(); sample++) {
-            //*channelData = sin(*channelData * amount * .01);
+            //For each of the types of distortion, check if the amount > 0,
+            //then if it is, apply that type of distortion.
             if (softAmount > 0.0) {
                 *channelData = distort::softClip(*channelData, softAmount);
             }
