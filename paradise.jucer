@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="UAZu7T" name="paradise" projectType="audioplug" useAppConfig="0"
+              addUsingNamespaceToJuceHeader="0" displaySplashScreen="1" jucerFormatVersion="1"
+              pluginFormats="buildStandalone,buildVST3" pluginDesc="Distortion plugin with parallel and sequencing options"
+              pluginManufacturer="pbjtime" pluginManufacturerCode="pbjt" pluginCode="Lolp"
+              pluginChannelConfigs="{2, 2}" pluginVST3Category="Distortion"
+              cppLanguageStandard="latest">
+  <MAINGROUP id="C0G7R5" name="paradise">
+    <GROUP id="{5024352A-EB27-9A48-CF4B-0BDF336A1FBF}" name="Source">
+      <FILE id="xFQcS3" name="Distort.cpp" compile="1" resource="0" file="Source/Distort.cpp"/>
+      <FILE id="jIzdIE" name="Distort.h" compile="0" resource="0" file="Source/Distort.h"/>
+      <FILE id="skQyci" name="PluginProcessor.cpp" compile="1" resource="0"
+            file="Source/PluginProcessor.cpp"/>
+      <FILE id="CU8zdz" name="PluginProcessor.h" compile="0" resource="0"
+            file="Source/PluginProcessor.h"/>
+      <FILE id="fto7Zi" name="PluginEditor.cpp" compile="1" resource="0"
+            file="Source/PluginEditor.cpp"/>
+      <FILE id="SxrwZY" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_VST3_CAN_REPLACE_VST2="0"/>
+  <EXPORTFORMATS>
+    <VS2022 targetFolder="Builds/VisualStudio2022">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="paradise"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="paradise"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../source/repos/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../source/repos/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../source/repos/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../source/repos/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../source/repos/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../source/repos/JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../../source/repos/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../source/repos/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../source/repos/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../source/repos/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../source/repos/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../source/repos/JUCE/modules"/>
+      </MODULEPATHS>
+    </VS2022>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+</JUCERPROJECT>
